@@ -15,7 +15,7 @@
     <!-- Place the below code anywhere you like in the <head> (higher is better) -->
     <script>window.AdSlots = window.AdSlots || {cmd: [], disableScripts: ['gpt']};</script>
     <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-    <script async src="/dist/techraptor.min.js"></script>
+    <script async src="https://kumo.network-n.com/dist/app.js" site="tech-raptor"></script>
 </head>
 
 <body>
@@ -342,17 +342,8 @@
         vfAdContainer.appendChild(networkNAd);
         console.log("3. generateContentRecirculationAd");
         // NetworkN script is loaded dinamically and after the divs with ids have been added to the Viafoura ad slots
-        loadNetworkN();
     };
 
-    function loadNetworkN() {
-        const networkN = document.createElement("script");
-        networkN.setAttribute("async", true);
-        networkN.setAttribute("src", "https://kumo.network-n.com/dist/app.js");
-        networkN.setAttribute("site", "tech-raptor");
-        document.head.appendChild(networkN);
-        console.log("4. loadNetworkN");
-    }
 </script>
 
 </body>
